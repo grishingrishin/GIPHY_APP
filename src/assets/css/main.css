@@ -114,6 +114,24 @@ body {
   background-size: contain;
 }
 
+.section {
+  padding: 24px 0;
+}
+
+.section__header {
+  display: flex;
+  padding: 18px 0 .5em;
+  justify-content: space-between;
+}
+
+.section__title {
+  font-size: 1em;
+}
+
+.section__detail {
+  color: rgb(166, 166, 166);
+}
+
 /* ~ 320px */
 @media (min-width: 20em) {
   .container {
