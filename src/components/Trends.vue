@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: "AllTrands"
+  name: "Trends"
 }
 </script>

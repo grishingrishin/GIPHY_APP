@@ -2,6 +2,8 @@
 node_modules
 /dist
 
+/src/utils/api_key.js
+
 # local env files
 .env.local
 .env.*.local
