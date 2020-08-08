@@ -1,4 +1,4 @@
-# giphy
+# Giphy web app
 
 ## Project setup
 ```
