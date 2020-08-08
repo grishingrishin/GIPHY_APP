@@ -1,0 +1,103 @@
+:root {
+  --breadpoint-xs:              320px;
+  --breadpoint-md:              680px;
+  --breadpoint-lg:              920px;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+  background-color: rgb(18, 18, 18);
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.header__inner {
+  display: flex;
+  padding: 14px 0;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin-right: 1em;
+}
+
+.logo [role=img] {
+  display: inline-block;
+  width: 164px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.header__hamburger {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.navbar {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(0, 204, 255),
+  rgb(153, 51, 255) 31%, rgb(230, 70, 182) 52%, rgb(255, 249, 170) 77%,
+  rgb(0, 255, 153), rgb(0, 204, 255)) repeat scroll 0% 50% / 200% 50%;
+}
+
+.nav__item {
+  position: relative;
+  height: 36px;
+}
+
+.nav__item:hover::after {
+  opacity: 0.3;
+}
+
+.nav__item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  background-color: rgb(18, 18, 18);
+  transition: opacity 0.35s ease 0s;
+  inset: 0px 0 4px;
+}
+
+.nav__link {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  height: 100%;
+  padding: 0 1em;
+  font-size: 14px;
+  line-height: 36px;
+  color: inherit;
+  border-right: 4px solid rgb(18, 18, 18);
+}
+
+/* ~ 680px */
+@media (min-width: 42.5em) {
+  .navbar {
+    display: block;
+  }
+
+  .header__hamburger {
+    display: none;
+  }
+}

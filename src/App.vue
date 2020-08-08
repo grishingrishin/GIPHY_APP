@@ -1,28 +1,36 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="app">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="/" class="header__logo logo">
+            <span
+              role="img"
+              style="background-image: url(../assets/images/logo.svg)"
+              aria-label="Логотип приложения"
+            ></span>
+          </a>
+          <MainNavbar />
+          <button type="button" class="header__hamburger hamburger">
+            <span
+              role="img"
+              style="background-image: url(../assets/images/menu.svg);"
+              aria-label="Мобильное меню"
+            ></span>
+          </button>
+        </div>
+      </div>
+    </header>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainNavbar from './components/MainNavbar.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MainNavbar
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
