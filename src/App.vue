@@ -24,7 +24,7 @@
     <SearchInput />
     <div class="content-area">
       <main class="main">
-        <Home />
+        <Trends/>
       </main>
     </div>
   </div>
@@ -36,14 +36,14 @@ import MainNavbar from './components/MainNavbar.vue';
 import SearchInput from "./components/SearchInput.vue";
 
 // Pages
-import Home from './pages/Home.vue';
+import Trends from './components/Trends.vue';
 
 export default {
   name: 'App',
   components: {
     MainNavbar,
     SearchInput,
-    Home
+    Trends,
   }
 }
 </script>

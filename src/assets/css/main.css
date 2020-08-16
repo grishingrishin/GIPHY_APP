@@ -132,6 +132,26 @@ body {
   color: rgb(166, 166, 166);
 }
 
+.gifs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  align-content: flex-start;
+}
+
+.gifs__item {
+  flex: 0 1 100%;
+  padding: 1em;
+}
+
+.gif {
+  display: block;
+}
+
+.gif__img {
+  width: 100%;
+}
+
 /* ~ 320px */
 @media (min-width: 20em) {
   .container {
@@ -148,5 +168,16 @@ body {
 
   .header__hamburger {
     display: none;
+  }
+
+  .gifs__item {
+    flex: 0 1 calc(100% / 2);
+  }
+}
+
+/* ~ 940px */
+@media (min-width: 58.75em) {
+  .gifs__item {
+    flex: 0 1 calc(100% / 3);
   }
 }
